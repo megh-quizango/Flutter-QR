@@ -1,0 +1,74 @@
+feature,area,priority,original,clone,notes
+Live camera scan opens first,scan,must,yes,partial,ScanLight opens on Home; reference opens on the scanner (S02)
+Viewfinder + beep/vibrate/auto-copy on detect,scan,must,yes,yes,
+Flash toggle,scan,must,yes,yes,
+Flip camera,scan,must,yes,yes,
+Zoom bar with minus/plus buttons,scan,should,yes,partial,ScanLight has slider and pinch; add the - and + buttons
+Scan image from gallery,scan,must,yes,yes,
+Several codes in one image picker,scan,should,unknown,yes,ScanLight extra
+Batch scan mode (count; list at end),scan,should,yes,no,S06; toggled in Settings
+Invert scan (white on black),scan,could,yes,no,
+Auto focus / touch focus,scan,could,yes,partial,mobile_scanner autofocuses; add tap to focus
+Camera selection,scan,could,yes,no,
+Barcode format toggles,scan,could,yes,no,
+Keep duplicates setting,scan,should,yes,partial,ScanLight ignores repeats within 2 s; add setting for history duplicates
+Receive shared image -> scan,scan,should,yes,no,Android SEND image/*
+Typed result header (icon type time),result,must,yes,yes,
+Rename a record,result,should,yes,no,
+Favourite toggle,result,must,yes,yes,
+Action button grid per type,result,must,yes,partial,ScanLight uses buttons; match the full per-type action list
+Format / type / metadata rows,result,must,yes,yes,Details section
+Barcode image on result,result,should,yes,no,
+URL info (fetch page title),result,could,yes,no,network; off by default in ScanLight for privacy
+Wi-Fi connect + copy password,result,must,yes,yes,
+Contact: add / call / email / show map,result,must,yes,partial,add Show map for address
+Phone: add contact,result,could,yes,no,
+SMS / MMS,result,should,yes,partial,MMS missing
+Geo: show map + get directions,result,must,yes,partial,directions missing
+Event: add to calendar,result,must,yes,yes,
+Product / ISBN search,result,must,yes,partial,ScanLight uses Open Food Facts + web search; add Book search for ISBN
+Save result image to gallery,result,should,yes,no,
+Custom actions with {code},result,should,yes,no,S15
+In-app browser (refresh copy open in browser),result,should,yes,partial,ScanLight opens an in-app browser tab
+Navigation drawer,nav,must,yes,no,ScanLight has bottom tabs; PRD v2 switches to drawer + scanner home
+History list newest first,history,must,yes,yes,
+Day headers (Today Yesterday date),history,must,yes,yes,
+Delete all from one day,history,should,yes,no,
+Filter by type (side drawer),history,should,yes,partial,ScanLight filters by source; add type filter
+Search history,history,should,unknown,yes,ScanLight extra
+Swipe/menu delete with Undo,history,must,yes,yes,
+Multi-select delete,history,should,yes,yes,
+Clear history with confirm,history,must,yes,yes,
+Favourites as own screen,history,must,yes,partial,ScanLight has a Favourites filter chip
+Drag to reorder favourites,history,could,yes,no,
+Export CSV,history,should,yes,yes,
+Export TXT / to file / share,history,could,yes,partial,share exists; add TXT and save to file
+Import CSV,history,could,yes,no,
+Add scans to history toggle,history,should,yes,yes,
+Create from clipboard,create,should,yes,no,
+Create Text URL Wi-Fi Contact Email Phone SMS,create,must,yes,yes,
+Create Event,create,should,yes,no,
+Create Location (with current location),create,should,yes,no,needs location permission only when tapped
+Create barcode formats (EAN UPC Code39/93/128 ITF Codabar DataMatrix Aztec PDF417),create,should,yes,no,needs barcode encoder package
+Add from contacts in forms,create,could,yes,no,
+Receive shared text -> create,create,should,yes,no,Android SEND text/*
+Created preview: save share rename favourite,create,must,yes,partial,rename missing
+My QR (personal contact code),create,should,yes,no,S13
+Settings: beep vibrate copy auto-open,settings,must,yes,yes,
+Search engine choice,settings,should,yes,no,
+Search country for products,settings,could,yes,no,
+Custom search URL,settings,could,yes,no,
+Theme device/light/dark,settings,must,yes,yes,
+Colour scheme (accent) picker,settings,could,yes,no,
+First-run setup wizard,onboarding,could,yes,no,S01
+Share app,settings,could,yes,no,
+Privacy policy / terms,settings,must,yes,yes,ScanLight Privacy screen
+Brand kit (logo colour shape),scanlight,must,no,yes,ScanLight-only; keep
+QR style presets + share card,scanlight,must,no,yes,ScanLight-only; keep
+Link safety warnings,scanlight,must,no,yes,ScanLight-only; keep
+Collection / stats / weekly chart,scanlight,could,no,yes,move into History header
+Ads and remove-ads purchase,skip,skip,yes,skip,ad-free by design
+Analytics and ad ID,skip,skip,yes,skip,no tracking
+GDPR consent wall,skip,skip,yes,skip,nothing collected
+Rate prompt / Our apps,skip,skip,yes,skip,
+Amazon / eBay shop buttons,skip,skip,yes,skip,affiliate
